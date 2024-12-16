@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Jua&family=Orbitron:wght@400..900&family=VT323&display=swap');
+
+/* 모든 요소의 기본 여백 제거 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #d4e0b4;
+    justify-content: center;
+    align-items: center;
+}
+
+.fruit {
+    background: linear-gradient(to top, red, #ff7171);
+    border-radius: 100%;
+    width: 80PX;
+    height: 80PX;
+    position: absolute;
+}
+
+.small_leaf {
+    background: linear-gradient(to bottom, #6b7a49, #4b572e);
+    border-radius: 0 200px 100px 200px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: nomal_animation 3s ease-in-out infinite;
+}
+
+.leaf {
+    background: linear-gradient(to top, #8c9b67, #bbcc90);
+    border-radius: 0 200px 100px 200px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: nomal_animation 8s ease-in-out infinite;
+}
+
+@keyframes nomal_animation {
+    0% {
+        rotate: 0;
+    }
+
+    50% {
+        rotate: 10deg;
+    }
+
+    100% {
+        rotate: 0;
+    }
+}
+
+@keyframes animation_two {
+    0% {
+        rotate: 0;
+    }
+
+    50% {
+        rotate: -30deg;
+    }
+
+    100% {
+        rotate: 0;
+    }
+}
+
+#container {
+    flex-direction: column;
+    background-color: #c9daab;
+    box-shadow: 0 0 10px 2px #6b7a49;
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    position: relative;
+    font-family: 'Orbitron';
+}
+
+#nav {
+    justify-content: space-between;
+    width: 80px;
+    margin: 5px;
+}
+
+.nav__button {
+    background-color: #6b7a49;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.nav__button:nth-child(2) {
+    background-color: #ee2727;
+}
+
+.nav__button:nth-child(3) {
+    background-color: #88ad42;
+}
+
+#header {
+    background-color: #9eb468;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    height: 150px;
+    margin: 0 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#calculate {
+    height: 30px;
+}
+
+h1 {
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#main {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+.button {
+    background-color: #849163;
+    border: none;
+    border-radius: 10px;
+    width: 22%;
+    height: 18%;
+    font-size: 1.6rem;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #6b794c, #808b64);
+}
+
+.button:active {
+    background: linear-gradient(to bottom, #6b7a49, #4b572e);
+}
+
+.zero {
+    width: 48%;
+}
+
+.number {
+    background-color: #df4141;
+}
+
+.number:hover {
+    background: linear-gradient(to top, rgb(167, 19, 19), #c54545);
+}
+
+.number:active {
+    background: linear-gradient(to top, rgb(248, 36, 36), #ff7171);
+}
